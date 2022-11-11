@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.digitalClock {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    background-image: url(bgi.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-position: center;
+}
+h2 {
+    font-size: 3vw;
+    margin-bottom: 2%;
+    border: 1px solid greenyellow;
+    padding: 1%;
+    text-align: center;
+    letter-spacing: 2vw;
+    color: white;
+    text-transform: uppercase;
+}
+.clock {
+    display: flex;
+}
+.clock div{
+    font-size: 3vw;
+    margin: 1vw;
+    opacity: .75;
+    }
+.clock span {
+    color: white;
+    width: 8vw;
+    height: 6vw;
+    background-color: darkcyan;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px 2px 4px rgba(0,0,0,0.3),rgba(0,0,0,0.3);
+}
+
+.clock #text {
+    height: 3vw;
+    font-size: 1.3vw;
+    background-color: darkblue;
+    letter-spacing: .2vw;
+    color: white;
+}
+.clock #ampm {
+    margin-top: 120%;
+    font-size: 2vw;
+    height: 3vw;
+    width: 5vw;
+    background-color: green;
+    opacity: .8;
+}
+
+@media (max-width:450px) {
+
+    h2 {
+        font-size: 13vw;
+        border: 0;
+    }
+    .clock div {
+        font-size: 10vw;
+        margin: 1.2vw;
+    }
+    .clock span {
+        width: 25vw;
+        height: 20vw;
+    }
+    .clock #text {
+        font-size: 4vw;
+        height: 8vw;
+    }
+    .clock #ampm {
+        margin-top: 155%;
+        font-size: 4vw;
+        height: 8vw;
+        width: 13vw;
+    }
+}
